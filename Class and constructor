@@ -1,0 +1,31 @@
+public class Person {
+    private String name;
+    private int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
+    // Getter for age
+    public int getAge() {
+        return age;
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        // Creating Person objects
+        Person alice = new Person("Alice", 25);
+        Person bob = new Person("Bob", 30);
+
+        // Printing information for each Person
+        System.out.println("Person 1 - Name: " + alice.getName() + ", Age: " + alice.getAge());
+        System.out.println("Person 2 - Name: " + bob.getName() + ", Age: " + bob.getAge());
+    }
+}
